@@ -1,5 +1,103 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(217, 238, 235);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: center;
+    align-items: center;
+    max-width: 80vw;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.side-img {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.conatent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+h3 {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.para {
+    color: hsl(214, 17%, 51%);
+    margin-bottom: 1rem;
+}
+
+.user-share {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+
+
+.avatar {
+    border-radius: 100%;
+    max-width: 3rem;
+    margin-right: 1rem;
+}
+
+.name {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+.birthday {
+    color: hsl(212, 23%, 69%);
+    font-weight: lighter;
+}
+
+.share {
+    position: absolute;
+    right: 0;
+    top: 0.7rem;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 100%;
+    padding: 0.6rem 0.5rem;
+}
+
+
+@media screen and (max-width: 750px){
+    body {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-img {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    
+    
 }
