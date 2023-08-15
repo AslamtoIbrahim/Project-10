@@ -1,19 +1,17 @@
-function shareBtn(){
-    const share = document.getElementById("sharing");
-    const icon = document.getElementById("share");
-    const pa = icon.querySelectorAll('path');
+function showSocialBtn(){
+    const shareIcon = document.getElementById("share-icon");
+    const socialHidden = document.getElementById("social-hidden");
+    const icon = document.getElementById("icon");
 
-    if (share.style.display == "none") {
-        share.style.display = "flex";
-        icon.style.backgroundColor = "hsl(217, 19%, 35%)";
-        pa.forEach(path =>{
-            path.setAttribute('fill','hsl(210, 46%, 95%)')
-        })
+    if (socialHidden.style.display == "none") {
+        socialHidden.style.display = "flex";
+        shareIcon.style.backgroundColor = "hsl(217, 19%, 35%)";
+        icon.src = 'images/icon-share-white.svg'
+        
     } else {
-        share.style.display = "none";
-        icon.style.backgroundColor = "hsl(210, 46%, 95%)";
-        pa.forEach(path =>{
-            path.setAttribute('fill','hsl(217, 19%, 35%)')
-        })
+        socialHidden.style.display = "none";
+        shareIcon.style.backgroundColor = "hsl(210, 46%, 95%)";
+        icon.src = 'images/icon-share.svg'
+         
     }
 }
