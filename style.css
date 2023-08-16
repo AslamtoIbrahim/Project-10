@@ -18,7 +18,7 @@ body {
     grid-template-columns: 40% 60%;
     justify-items: center;
     align-items: center;
-    max-width: 80vw;
+    max-width: 66vw;
     background-color: white;
     border-radius: 1rem;
 }
@@ -27,13 +27,18 @@ body {
     width: 100%;
     min-height: 100%;
     border-radius: 1rem 0 0 1rem;
+
 }
 
 .conatent {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 2rem;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.text {
+    padding: 2rem 2rem 0 2rem;
 }
 
 h3 {
@@ -46,6 +51,15 @@ h3 {
     color: hsl(214, 17%, 51%);
     margin-bottom: 1rem;
 }
+
+.information {
+    padding: 0 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-social {}
 
 .author-content {
     display: flex;
@@ -75,27 +89,36 @@ h3 {
     border-radius: 100%;
 }
 
-.share-icon{
+.share-icon {
     background-color: hsl(210, 46%, 95%);
     border-radius: 100%;
     padding: 1px 2px;
     cursor: pointer;
+    height: 24%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-hidden {
     background-color: hsl(217, 19%, 35%);
-    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    align-items: center;
+
+    /* width: 50%;
     display: none;
-    justify-content: space-around;
     padding: 0.6rem 1rem;
     border-radius: 0.7rem;
     position: absolute;
     top: -105%;
     right: -23%;
-    align-items: center;
+    align-items: center; */
 }
 
-.social-hidden::after{
+.social-hidden::after {
     position: absolute;
     content: '';
     border-style: solid;
@@ -106,10 +129,10 @@ h3 {
     transform: translateX(-50%);
 }
 
-.social-hidden p{
+.social-hidden p {
     text-transform: uppercase;
     letter-spacing: 5px;
-    color:hsla(210, 46%, 95%, 0.726) ;
+    color: hsla(210, 46%, 95%, 0.726);
 }
 
 
@@ -131,19 +154,18 @@ h3 {
     .social-hidden {
         background-color: hsl(217, 19%, 35%);
         display: flex;
-        justify-content: space-around;
-        /* position: absolute; */
-        /* bottom: 0; */
-        /* right: 0; */
+        justify-content: space-evenly;
+        padding: 1rem 0;
+        align-items: center;
         width: 100%;
     }
 
-    .author-info{
-        /* display: none; */
+    .author-info {
+        display: none;
 
     }
 
-    .social-hidden::after{
+    .social-hidden::after {
         border: none;
     }
 
