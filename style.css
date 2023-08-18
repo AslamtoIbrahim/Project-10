@@ -119,7 +119,7 @@ h3 {
     border-radius: 0 0 0.4rem 0.4rem;
     position: absolute;
     margin-top: -8rem;
-    margin-left: 15rem;
+    margin-left: 14.3rem;
     align-items: center;
     align-content: center;
 }
@@ -182,7 +182,7 @@ h3 {
     .social-hidden {
         position: absolute;
         bottom: 0;
-        left: -240px;
+        left: -228px;
         width: 100%;
         height: 100%;
         justify-content: left;
